@@ -36,7 +36,7 @@ function budgetCalculator(watchQuantity,phoneQuantity,laptopQuantity){
 var watch=8;
 var phone=5;
 var laptop=2;
-var result2=budgetCalculator(watch,phone,laptop); //calling function budgetCalculator() with parameter watch,phone and laptop.
+var result2=budgetCalculator(watch,phone,laptop);      //calling function budgetCalculator() with parameter watch,phone and laptop.
 console.log(result2);
 
 
@@ -85,19 +85,19 @@ console.log(result3);
 function megaFriend(nameList){
     
     var stringCount=0;
-    for (var i = 0; i <= nameList.length; i++) {      //Counting number of string in the array. 
+    for (var i = 0; i < nameList.length; i++) {      //Counting number of string in the array. 
         if (typeof nameList[i] =='string'){
             stringCount++;                           //if the element of array is string than increment the stringCounter
         }
     }
    
     if(nameList.length!=0 && stringCount==nameList.length){      // check whether the array have elements or not and checking stringCount is equal to the length of array or not.
-                                                                  //  perform further operation if and only if the aray is not empty and all the element of array are string.
+                                                                  //  perform further operation if and only if the array is not empty and all the element of array are string.
         var maximumLength=nameList[0].length;                    //initialize the maximumLength with the length of first element of array.
         var longestName=nameList[0];                             // assume that 1st element is longest.
         for(var j=0;j<nameList.length;j++){
             if(nameList[j].length>maximumLength){
-                maximumLength=nameList[j].length;                //update the value of maximumLength if there is any elemnt that's length is larger than maximumLength.
+                maximumLength=nameList[j].length;                //update the value of maximumLength if there is any element that's length is larger than maximumLength.
                 longestName=nameList[j];                         //update the longestName with new element that have long length.
             }
         }
