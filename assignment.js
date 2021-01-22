@@ -95,10 +95,10 @@ function megaFriend(nameList){
                                                                   //  perform further operation if and only if the aray is not empty and all the element of array are string.
         var maximumLength=nameList[0].length;                    //initialize the maximumLength with the length of first element of array.
         var longestName=nameList[0];                             // assume that 1st element is longest.
-        for(var i=0;i<nameList.length;i++){
-            if(nameList[i].length>maximumLength){
-                maximumLength=nameList[i].length;                //update the value of maximumLength if there is any elemnt that's length is larger than maximumLength.
-                longestName=nameList[i];                         //update the longestName with new element that have long length.
+        for(var j=0;j<nameList.length;j++){
+            if(nameList[j].length>maximumLength){
+                maximumLength=nameList[j].length;                //update the value of maximumLength if there is any elemnt that's length is larger than maximumLength.
+                longestName=nameList[j];                         //update the longestName with new element that have long length.
             }
         }
         return longestName;
