@@ -1,5 +1,5 @@
 
- https://github.com/Jubayer777/Assignment-3
+ //https://github.com/Jubayer777/Assignment-3
 
 
 
@@ -10,8 +10,8 @@ function kilometerToMeter(kilometer){
         return meter;             
     }
     else{
-        return 'Invalid input';   // Return Worning for invalid input like- negative distance 
-    }                             // return worning for wrong input data types such as array,string etc.
+        return 'Invalid input';   // Return warning for invalid input like- negative distance 
+    }                             // return warning for wrong input data types such as array,string etc.
 }
 var km=5;
 var result1=kilometerToMeter(km);  //calling function KilometerToMeter() with parameter km
@@ -104,7 +104,7 @@ function megaFriend(nameList){
         return longestName;
     }
     else{
-        return 'Invalid Input';                               //return worning if the array is empty or there is any other types of element of array except string.
+        return 'Invalid Input';                               //return warning if the array is empty or there is any other types of element of array except string.
     }
 }
 var friends=['Jubayer','Rashed','Abdullah'];
